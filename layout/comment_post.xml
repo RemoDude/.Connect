@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="80dp"
+            app:cardElevation="1dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_comment"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:src="@drawable/johnnynew" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="45dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/user_name_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remo"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <TextView
+android:id="@+id/timestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8h"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#90000000"
+                    android:textSize="13sp" />
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Ago"-->
+<!--                    android:layout_marginStart="2dp"-->
+<!--                    android:textColor="#90000000"-->
+<!--                    android:textSize="13sp" />-->
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/comment_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="In this tutorial, we will learn simple ways to display output to users and take input from users in Python with the help of examples."
+                    android:textSize="15sp"
+
+                    />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/replies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:text="Reply"
+
+                    />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            >
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/meatball"
+
+
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+    </RelativeLayout>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:id="@+id/linearlayout_reply_line"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:visibility="gone"
+    app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+    >
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="50dp"
+        android:layout_height="2dp"
+    android:layout_marginEnd="10dp"
+        android:layout_gravity="center"
+        android:background="@color/black"
+        />
+    <TextView
+        android:id="@+id/hide_viewtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View "
+       />
+
+    <TextView
+        android:id="@+id/replies_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 10 "
+       />
+
+    <TextView
+        android:id="@+id/more_replies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="more replies "
+       />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="50dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:background="@color/black"
+        />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout_reply_line"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+        >
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_reply"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:listitem="@layout/reply_comment_post"
+
+
+
+
+            />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/reply_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorColor="#1B8BF2"
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+
+<!--    <RelativeLayout-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="@color/black"-->
+<!--            app:cardCornerRadius="80dp"-->
+<!--            app:cardElevation="1dp">-->
+
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+
+<!--                android:layout_width="35dp"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:src="@drawable/johnnynew" />-->
+
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_marginStart="45dp"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Remo"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp" />-->
+
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:text="8h"-->
+<!--                    android:textColor="#90000000"-->
+<!--                    android:textSize="13sp" />-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="2dp"-->
+<!--                    android:text="Ago"-->
+<!--                    android:textColor="#90000000"-->
+<!--                    android:textSize="13sp" />-->
+
+
+<!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+<!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:text="In this tutorial, we will learn simple ways to display output to users and take input from users in Python with the help of examples."-->
+<!--                    android:textSize="15sp"-->
+
+<!--                    />-->
+
+
+<!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Reply"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp"-->
+
+<!--                    />-->
+
+
+<!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="15dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:src="@drawable/meatball"-->
+
+
+<!--                />-->
+<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+<!--    </RelativeLayout>-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

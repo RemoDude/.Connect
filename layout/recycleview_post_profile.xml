@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+    app:cardElevation="5dp"
+    android:layout_marginBottom="15dp"
+
+
+
+    >
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="80dp"
+            app:cardElevation="1dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_qna"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:src="@drawable/johnnynew" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="45dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_name_qna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Name"
+                android:textSize="14sp" />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/category_qna"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entrance exams "
+                    android:textSize="11sp"
+                    android:textColor="#1B8BF2"
+
+                    />
+
+                <TextView
+                    android:id="@+id/timestamp_qna"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jan 23, 2023"
+                    android:textSize="11sp"
+
+                    />
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <ImageView
+            android:id="@+id/menu_button"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/meatball"
+
+
+            />
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="340dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:src="@drawable/cad" />-->
+
+
+        <TextView
+            android:id="@+id/question_qna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/post_box"
+            android:paddingBottom="25dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="What’s your favorite way to spend a day off?"
+
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        android:layout_marginEnd="10dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat11"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/upvote_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/upvote_background"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/upvote_button"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:src="@drawable/new_arrow_up"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/upvote_waala_qna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="upvotes"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+android:id="@+id/downvote_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/upvote_linear"
+            android:background="@drawable/upvote_background"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/downward_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:src="@drawable/new_arrow_down"
+                android:tint="@color/black"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/downvote_waala_qna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/answer_question_qna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/message"
+                android:tint="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

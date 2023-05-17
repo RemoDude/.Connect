@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="25dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!--        <com.google.android.material.card.MaterialCardView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:cardCornerRadius="80dp"-->
+        <!--            android:backgroundTint="@color/black"-->
+        <!--            app:cardElevation="1dp"-->
+        <!--            >-->
+
+        <!--            <com.google.android.material.imageview.ShapeableImageView-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:layout_width="130dp"-->
+        <!--                android:layout_height="130dp"-->
+        <!--                android:src="@drawable/johnnynew"-->
+        <!--                android:scaleType="fitXY"-->
+        <!--                />-->
+
+
+
+        <!--        </com.google.android.material.card.MaterialCardView>-->
+
+
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:layout_marginTop="20dp"-->
+
+        <!--            android:gravity="center"-->
+        <!--            android:text="Choose your profile picture"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="14sp"-->
+        <!--            android:textStyle="normal"-->
+        <!--            />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:layout_marginTop="20dp"
+            android:text="Choose your Profie picture"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="You can also set it later."
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <!--        <com.adroitandroid.chipcloud.ChipCloud-->
+        <!--            android:id="@+id/chip_cloud"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"/>-->
+        <!--path relative to assets folder-->
+
+        <com.adroitandroid.chipcloud.ChipCloud
+            android:layout_marginTop="30dp"
+            android:id="@+id/chip_cloud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:gravity="staggered"
+            app:minHorizontalSpacing="6dp"
+            app:verticalSpacing="16dp"
+
+            />
+        <!--        <com.adroitandroid.chipcloud.ChipCloud-->
+        <!--            xmlns:chipcloud="http://schemas.android.com/apk/res-auto"-->
+        <!--            android:id="@+id/chip_cloud"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            chipcloud:deselectedColor="@color/deselected_color"-->
+        <!--            chipcloud:deselectedFontColor="@color/deselected_font_color"-->
+        <!--            chipcloud:selectedColor="@color/selected_color"-->
+        <!--            chipcloud:selectedFontColor="@color/selected_font_color"-->
+        <!--            chipcloud:deselectTransitionMS="500"-->
+        <!--            chipcloud:selectTransitionMS="750"-->
+        <!--            chipcloud:labels="@array/labels"-->
+        <!--            chipcloud:selectMode="required"-->
+        <!--            chipcloud:allCaps="true"-->
+        <!--            chipcloud:gravity="staggered"-->
+        <!--            chipcloud:minHorizontalSpacing="32dp"-->
+        <!--            chipcloud:verticalSpacing="16dp"-->
+        <!--            chipcloud:textSize="14sp"-->
+        <!--            chipcloud:typeface="RobotoSlab-Regular.ttf"/> &lt;!&ndash;path relative to assets folder&ndash;&gt;-->
+
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="45dp"-->
+        <!--            app:hintEnabled="false"-->
+        <!--            android:hint="Max"-->
+        <!--            android:imeOptions="actionNext"-->
+        <!--            app:boxCornerRadiusBottomEnd="10dp"-->
+        <!--            app:boxCornerRadiusBottomStart="10dp"-->
+        <!--            app:boxCornerRadiusTopEnd="10dp"-->
+        <!--            app:boxCornerRadiusTopStart="10dp"-->
+        <!--            app:boxStrokeWidth="2dp"-->
+        <!--            app:errorEnabled="true"-->
+        <!--            app:hintAnimationEnabled="false">-->
+
+        <!--            <com.google.android.material.textfield.TextInputEditText-->
+        <!--                android:id="@+id/movies_name"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                android:background="@drawable/backgroudn_editext"-->
+        <!--                android:inputType="text"-->
+        <!--                android:hint="Ex. Max"-->
+        <!--                android:cursorVisible="true"-->
+
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="17sp" />-->
+
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <!--        </com.google.android.material.card.MaterialCardView>-->
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="80dp"
+            app:cardElevation="1dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/_profile_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/johnnynew"
+                />
+
+
+<!--            <com.google.android.material.imageview.ShapeableImageView-->
+<!--                android:id="@+id/_profile_image"-->
+<!--                android:layout_width="130dp"-->
+<!--                android:layout_height="130dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/johnnynew" />-->
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textAlignment="textStart"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--&lt;!&ndash;            android:text="Enter your username?"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:textColor="@color/black"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:textSize="32sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:textStyle="bold"&ndash;&gt;-->
+        <!--&lt;!&ndash;            />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_marginTop="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:textAlignment="textStart"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:text="You will not be able to change it later"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:textColor="@color/black"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:textSize="14sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:textStyle="normal" />&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;        <com.google.android.material.textfield.TextInputLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_marginTop="45dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            app:hintEnabled="false"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:hint="Max"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:imeOptions="actionNext"&ndash;&gt;-->
+        <!--&lt;!&ndash;            app:boxCornerRadiusBottomEnd="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            app:boxCornerRadiusBottomStart="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            app:boxCornerRadiusTopEnd="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            app:boxCornerRadiusTopStart="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            app:boxStrokeWidth="2dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            app:errorEnabled="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;            app:hintAnimationEnabled="false">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;            <com.google.android.material.textfield.TextInputEditText&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:id="@+id/movies_name"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_marginTop="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:background="@drawable/backgroudn_editext"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:inputType="text"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:hint="Ex. Max"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:cursorVisible="true"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                android:textColor="@color/black"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:textSize="17sp" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;        </com.google.android.material.textfield.TextInputLayout>&ndash;&gt;-->
+
+        <!--        &lt;!&ndash;        </com.google.android.material.card.MaterialCardView>&ndash;&gt;-->
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayoutCompat6"
+        app:layout_constraintTop_toTopOf="@+id/linearLayoutCompat6">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This will be shown to your profile"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/nextbutton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/fab_background"
+            app:elevation="5dp"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            android:textColor="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

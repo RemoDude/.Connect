@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat16"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backimage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            app:tint="@color/black"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat">
+
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lnctu" />
+
+
+    </LinearLayout>
+
+
+        <!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="35dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            android:src="@drawable/india" />-->
+
+
+    <!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.229">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Enter your Mobile number"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="We will send you a verification code."
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="+91-"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/phonenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="2dp"
+                        android:background="@null"
+                        android:hint="1234567890"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textAlignment="textStart"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+
+                        />
+
+
+                    <!--            <com.google.android.material.textfield.TextInputLayout-->
+                    <!--                android:id="@+id/customerSpinnerLayout"-->
+                    <!--                android:layout_width="100dp"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_gravity="center"-->
+                    <!--                android:layout_marginStart="20dp"-->
+                    <!--                android:layout_marginEnd="15dp"-->
+                    <!--                android:clickable="false"-->
+                    <!--                app:boxStrokeColor="#1B8BF2"-->
+                    <!--                app:boxStrokeWidth="2dp"-->
+                    <!--                app:hintAnimationEnabled="false"-->
+                    <!--                app:hintEnabled="false">-->
+
+                    <!--                <com.google.android.material.textfield.TextInputEditText-->
+                    <!--                    android:id="@+id/edit_text1"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_gravity="center"-->
+                    <!--                    android:background="@android:color/transparent"-->
+                    <!--                    android:clickable="false"-->
+                    <!--                    android:focusable="false"-->
+                    <!--                    android:text="IN +91"-->
+                    <!--                    android:textColor="@color/black"-->
+                    <!--                    android:textSize="18sp" />-->
+
+                    <!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+                    <!--            <com.google.android.material.textfield.TextInputLayout-->
+                    <!--                android:id="@+id/filledTextField"-->
+                    <!--                android:layout_width="200dp"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_gravity="center"-->
+                    <!--                android:layout_marginEnd="20dp"-->
+                    <!--                android:background="@android:color/transparent"-->
+                    <!--                app:boxStrokeColor="#1B8BF2"-->
+                    <!--                app:boxStrokeWidth="2dp"-->
+                    <!--                app:hintAnimationEnabled="false"-->
+                    <!--                app:hintEnabled="false"-->
+                    <!--                app:hintTextColor="@color/black"-->
+                    <!--                app:prefixTextColor="@color/black">-->
+
+
+                    <!--                &lt;!&ndash;this is the actual edit text which takes the input&ndash;&gt;-->
+                    <!--                <com.google.android.material.textfield.TextInputEditText-->
+                    <!--                    android:id="@+id/phonenumber"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_gravity="center"-->
+                    <!--                    android:layout_marginEnd="10dp"-->
+                    <!--                    android:background="@android:color/transparent"-->
+                    <!--                    android:hint="1234567890"-->
+                    <!--                    android:inputType="number"-->
+                    <!--                    android:maxLength="10"-->
+                    <!--                    android:textColor="@color/black"-->
+                    <!--                    android:textSize="18sp" />-->
+
+                    <!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_margin="30dp"-->
+<!--                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when  a type specimen book. "-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp" />-->
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/login_button_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat17" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:layout_editor_absoluteX="30dp">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Continue_button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/login_button_background"
+            android:text="Verify"
+            android:textColor="@color/white" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat17"-->
+<!--        app:layout_constraintVertical_bias="0.3">-->
+
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/Continue_button"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginEnd="15dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:background="@drawable/login_button_background"-->
+<!--            android:text="CONTINUE"-->
+<!--            android:textColor="@color/white" />-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_marginBottom="15dp"
+    android:background="@color/white"
+    app:cardElevation="5dp"
+
+
+    >
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="#BAFFFFFF"
+        android:elevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Answers">
+
+
+        <!--            <com.google.android.material.imageview.ShapeableImageView-->
+        <!--                android:layout_width="8dp"-->
+        <!--                android:layout_height="8dp"-->
+        <!--                android:scaleType="fitXY"-->
+        <!--                android:layout_marginTop="25dp"-->
+        <!--                android:src="@drawable/connect_color" />-->
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="80dp"
+                app:cardElevation="1dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_qna"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/johnnynew" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_name_qna"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/category_qna"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:text="Entrance exams "-->
+                    <!--                        android:textSize="11sp"-->
+                    <!--                        android:textColor="#1B8BF2"-->
+
+                    <!--                        />-->
+
+                    <TextView
+                        android:id="@+id/timestamp_qna"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jan 23, 2023"
+                        android:textSize="11sp"
+
+                        />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="15dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_marginRight="5dp"-->
+            <!--                android:src="@drawable/meatball"-->
+
+
+            <!--                />-->
+
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+
+            <!--        <androidx.appcompat.widget.AppCompatImageView-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="340dp"-->
+            <!--            android:scaleType="fitXY"-->
+            <!--            android:src="@drawable/cad" />-->
+
+
+            <TextView
+                android:id="@+id/question_qna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/post_box"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:paddingBottom="25dp"
+                android:text="What’s your favorite way to spend a day off?"
+                android:textColor="@color/black"
+
+                android:textSize="18sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <!--        <RelativeLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="15dp"-->
+        <!--            android:layout_marginStart="10dp"-->
+        <!--            android:paddingBottom="15dp"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:layout_marginEnd="10dp"-->
+
+        <!--            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat11"-->
+        <!--            >-->
+
+        <!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+        <!--                android:id="@+id/upvote_linear"-->
+        <!--                android:layout_width="130dp"-->
+        <!--                android:layout_height="30dp"-->
+        <!--                android:layout_marginStart="10dp"-->
+        <!--                android:background="@drawable/upvote_background"-->
+        <!--                >-->
+
+        <!--                <androidx.appcompat.widget.AppCompatImageView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="15dp"-->
+        <!--                    android:src="@drawable/arrowupward"-->
+        <!--                    android:tint="@color/black"-->
+        <!--                    android:layout_marginTop="7dp"-->
+        <!--                    android:layout_marginEnd="5dp"-->
+        <!--                    android:layout_marginStart="5dp"-->
+        <!--                    />-->
+
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/upvotes_qna"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="1000"-->
+        <!--                    android:layout_marginEnd="5dp"-->
+        <!--                    android:layout_marginTop="5dp"-->
+        <!--                    android:textColor="@color/black"-->
+        <!--                    />-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="upvotes"-->
+        <!--                    android:textColor="@color/black"-->
+        <!--                    android:layout_marginTop="5dp"-->
+
+        <!--                    />-->
+        <!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+        <!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+
+        <!--                android:layout_width="80dp"-->
+        <!--                android:layout_height="30dp"-->
+        <!--                android:layout_marginStart="10dp"-->
+        <!--                android:layout_toEndOf="@id/upvote_linear"-->
+        <!--                android:background="@drawable/upvote_background"-->
+        <!--                >-->
+
+        <!--                <androidx.appcompat.widget.AppCompatImageView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="15dp"-->
+        <!--                    android:src="@drawable/downarrow"-->
+        <!--                    android:tint="@color/black"-->
+        <!--                    android:layout_marginTop="7dp"-->
+        <!--                    android:layout_marginEnd="5dp"-->
+        <!--                    android:layout_marginStart="5dp"-->
+        <!--                    />-->
+
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/downvote_qna"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="1000"-->
+        <!--                    android:layout_marginEnd="5dp"-->
+        <!--                    android:layout_marginTop="5dp"-->
+        <!--                    android:textColor="@color/black"-->
+        <!--                    />-->
+
+
+        <!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+        <!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+        <!--                android:id="@+id/answer_question_qna"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_alignParentRight="true"-->
+        <!--                >-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="Answer"-->
+        <!--                    />-->
+
+        <!--                <androidx.appcompat.widget.AppCompatImageView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:src="@drawable/message"-->
+        <!--                    android:tint="@color/black"-->
+        <!--                    android:layout_gravity="center"-->
+        <!--                    android:layout_marginEnd="5dp"-->
+        <!--                    android:layout_marginStart="5dp"-->
+        <!--                    />-->
+
+        <!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+        <!--        </RelativeLayout>-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent">-->
+
+    <!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+
+
+    <!--            <ScrollView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                >-->
+
+
+    <!--                <com.google.android.material.textfield.TextInputLayout-->
+    <!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:layout_marginStart="10dp"-->
+    <!--                    android:gravity="start"-->
+    <!--                    android:hint="Type your answer here"-->
+    <!--                    android:imeOptions="actionNext"-->
+    <!--                    android:scrollbars="vertical"-->
+    <!--                    android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"-->
+    <!--                    app:boxCornerRadiusBottomEnd="10dp"-->
+    <!--                    app:boxCornerRadiusBottomStart="10dp"-->
+    <!--                    app:boxCornerRadiusTopEnd="10dp"-->
+
+    <!--                    app:boxCornerRadiusTopStart="10dp"-->
+    <!--                    app:boxStrokeWidth="1dp">-->
+
+    <!--                    <com.google.android.material.textfield.TextInputEditText-->
+    <!--                        android:id="@+id/User_name"-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:background="@drawable/backgroudn_editext"-->
+    <!--                        android:cursorVisible="true"-->
+    <!--                        android:inputType="textMultiLine"-->
+    <!--                        android:maxLines="5"-->
+    <!--                        android:text="hi tiskjhkahksdfksdhjksdfghffgdfgdfgdfgdgdfgdfgdfgdfgjkdfkdfhgkdhfgdkfjdkfghkgkdjfhsjkgkfgsdfskfdhskjdfghskfjksdfhgksdfhgjksdfhgjkdsfksdlsdkhgksdfhg"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="17sp" />-->
+
+    <!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--            </ScrollView>-->
+
+    <!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+    <!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:orientation="horizontal"-->
+
+    <!--            >-->
+
+    <!--            <androidx.appcompat.widget.AppCompatImageButton-->
+    <!--                android:id="@+id/nextbutton"-->
+    <!--                android:layout_width="50dp"-->
+    <!--                android:layout_height="50dp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:layout_marginStart="4dp"-->
+    <!--                android:background="@drawable/fab_background"-->
+    <!--                android:src="@drawable/ic_baseline_arrow_forward_24"-->
+
+    <!--                android:textColor="@color/white"-->
+    <!--                app:elevation="5dp" />-->
+
+    <!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+    <!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_of_qna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="240dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/answer_recyclerview"
+
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/answers_background_answers_send"
+            app:layout_constraintEnd_toStartOf="@+id/nextbutton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:scrollIndicators="none"
+
+
+                >
+
+                <EditText
+                    android:id="@+id/answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:inputType="textMultiLine"
+                    android:scrollbars="none"
+                    android:maxHeight="70dp"
+                    android:scrollIndicators="none"
+
+                  android:hint="Comment your Answer..."
+                    android:background="@null"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp" />
+
+
+            </ScrollView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <!--        </ScrollView>-->
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/nextbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/fab_background"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            android:textColor="@color/white"
+            app:elevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/nextbutton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
